@@ -1,0 +1,18 @@
+leveldbs:
+    Others.ldb: 
+        - AllIndustryBsiCard
+        - TitanWebServiceStat
+        - TitanAppVersionStat
+        - TopRankStat
+    SiteBsiTrend.ldb: 
+        - SiteBsiTrend
+    SiteBsiList.ldb: 
+        - SiteBsiList
+    IndustryBsiTrend.ldb: 
+        - IndustryBsiTrend
+    StatBySite.ldb: 
+        - StatBySite
+    StatByThreat.ldb: 
+        - StatByThreat
+    HostCustomFPs.ldb: 
+        - HostCustomFPs
