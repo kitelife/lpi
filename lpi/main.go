@@ -17,7 +17,7 @@ import (
 	"github.com/syndtr/goleveldb/leveldb/util"
 	"gopkg.in/yaml.v2"
 
-	"bsi/lpi"
+	"github.com/youngsterxyf/lpi"
 )
 
 type appConfT struct {
