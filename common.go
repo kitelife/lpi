@@ -50,3 +50,6 @@ var StatusMsgs = map[int]string{
 	StatusInternalServerError: "服务器内部错误",
 	StatusNotFound:            "未找到指定资源",
 }
+
+// ContentTypeJSON JSON格式请求/响应体
+const ContentTypeJSON = "application/json"

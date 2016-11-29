@@ -47,7 +47,7 @@ func _respJSON(resp http.ResponseWriter, data ...interface{}) {
 	if len(data) > 0 {
 		respBody.Data = data[0]
 	}
-	resp.Header().Set("Content-Type", "application/json")
+	resp.Header().Set("Content-Type", lpi.ContentTypeJSON)
 	respBodyBytes, _ := json.Marshal(respBody)
 	io.WriteString(resp, string(respBodyBytes))
 }
@@ -61,7 +61,7 @@ func _respJSONError(resp http.ResponseWriter, code int, msgs ...string) {
 	if len(msgs) > 0 {
 		respBody.Message = msgs[0]
 	}
-	resp.Header().Set("Content-Type", "application/json")
+	resp.Header().Set("Content-Type", lpi.ContentTypeJSON)
 	respBodyBytes, _ := json.Marshal(respBody)
 	io.WriteString(resp, string(respBodyBytes))
 }
